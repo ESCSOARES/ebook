@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+                <section>
+    <h1>Responda às perguntas abaixo:</h1>
+    <p></p>
+    <p></p>
+    <form>
+      <h2>Questão 1:</h2>
+      <p>A criptografia simétrica usa a mesma chave para cifrar e decifrar uma mensagem.</p>
+      <label>
+        <input type="radio" name="q1" value="certa">Certo
+      </label>
+      <label>
+        <input type="radio" name="q1" value="errada">Errado
+      </label>
+<p></p>
+<p></p>
+      <h2>Questão 2:</h2>
+      <p>A criptografia assimétrica utiliza um par de chaves diferentes, uma pública e outra privada, para cifrar e decifrar uma mensagem.</p>
+      <label>
+        <input type="radio" name="q2" value="certa">Certo
+      </label>
+      <label>
+        <input type="radio" name="q2" value="errada">Errado
+      </label>
+      <p></p>
+      <p></p>
+      <h2>Questão 3:</h2>
+      <p>A criptografia simétrica é mais rápida do que a criptografia assimétrica.</p>
+      <label>
+        <input type="radio" name="q3" value="certa">Certo
+      </label>
+      <label>
+        <input type="radio" name="q3" value="errada">Errado
+      </label>
+      <p></p>
+      <p></p>
+      <h2>Questão 4:</h2>
+      <p>Um exemplo de algoritmo de criptografia simétrica é o AES.</p>
+      <label>
+        <input type="radio" name="q4" value="certa">Certo
+      </label>
+      <label>
+        <input type="radio" name="q4" value="errada">Errado
+      </label>
+      <p></p>
+      <p></p>
+      <h2>Questão 5:</h2>
+      <p>RSA é um algoritmo de criptografia assimétrica amplamente utilizado para a transmissão segura de dados.</p>
+      <label>
+        <input type="radio" name="q5" value="certa">Certo
+      </label>
+      <label>
+        <input type="radio" name="q5" value="errada">Errado
+      </label>
+      <p></p>
+      <p></p>
+      <br><br>
+      <button type="button" onclick="verificar()">Verificar Respostas</button>
+    </form>
+    <p id="resultado"></p>
+    <script>
+      function verificar() {
+        var total = 5;
+        var pontos = 0;
+
+        // Questão 1
+        if (document.forms[0].q1.value == "certa") {
+          pontos++;
+        }
+
+        // Questão 2
+        if (document.forms[0].q2.value == "certa") {
+          pontos++;
+        }
+
+        // Questão 3
+        if (document.forms[0].q3.value == "certa") {
+          pontos++;
+        }
+
+        // Questão 4
+        if (document.forms[0].q4.value == "certa") {
+          pontos++;
+        }
+
+        // Questão 5
+        if (document.forms[0].q5.value == "certa") {
+          pontos++;
+        }
+
+        var resultado = document.getElementById("resultado");
+        resultado.innerHTML = "Você acertou " + pontos + " de " + total + " questões.";
+      }
+    </script>
+                </section>
+                <p>clique <a href="sumario.html">AQUI</a> e volte para a página inicial</p>
+</body>
+</html>

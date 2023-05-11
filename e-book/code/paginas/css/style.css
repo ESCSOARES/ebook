@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #eee;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-bottom: 5px solid #4CAF50;
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 48px;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  nav a:hover {
+    color: #4CAF50;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  section {
+    margin-bottom: 30px;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #4CAF50;
+  }
+  
+  h2 {
+    margin-top: 0;
+    font-size: 36px;
+    color: #4CAF50;
+  }
+  
+  p {
+    line-height: 1.5;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-top: 5px solid #4CAF50;
+  }
+  
+  footer p {
+    font-size: 18px;
+  }
+  
+  /* Estilos de Hacker */
+  
+  header {
+    background-image: url("https://cdn.pixabay.com/photo/2016/11/29/12/46/anonym-1869429_960_720.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  nav a:hover {
+    color: #fff;
+    text-shadow: 0 0 5px #4CAF50;
+  }
+  
+  section {
+    position: relative;
+  }
+  
+  section:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+  }
+  
+  section:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    left: -5px;
+    height: calc(100% + 10px);
+    width: calc(100% + 10px);
+    border: 5px solid #4CAF50;
+    border-radius: 5px;
+    z-index: -2;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  section:hover:after {
+    transform: translateY(-5px) translateX(5px);
+    box-shadow: 0 0 10px #4CAF50;
+  }
+  

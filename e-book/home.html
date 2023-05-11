@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="code/paginas/css/capa.css">
+    <title>Criptografia</title>
+    <meta charset="utf-8">
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #2f2f2f;
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .title {
+        text-align: center;
+        font-size: 48px;
+        color: #fff;
+        margin-bottom: 50px;
+      }
+
+      .image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+      }
+
+      .image-container img {
+        width: 200px;
+        height: 200px;
+        margin: 0 20px;
+        filter: grayscale(100%);
+        transition: all 0.3s ease-in-out;
+      }
+
+      .image-container img:hover {
+        filter: grayscale(0%);
+        transform: translateY(-10px);
+      }
+
+      .button {
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: #fff;
+        font-size: 24px;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .button:hover {
+        background-color: #fff;
+        color: #4CAF50;
+        transform: translateY(-5px);
+        box-shadow: 0 0 10px #4CAF50;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">E-book de Criptografia</h1>
+      <div class="image-container">
+        <a href="code/paginas/sumario.html"><img src="code/paginas/imagens/start.png" alt="Start"></a>
+        <a href="code/paginas/quiz_javascript.html"><img src="code/paginas/imagens/quiz.jfif" alt="quiz"></a>
+        <a href="code/paginas/thankyou.html"><img src="code/paginas/imagens/chave.jpg" alt="Chave"></a>
+        
+      </div>
+      <a href="#" class="button">Baixar Agora</a>
+    </div>
+  </body>
+</html>
